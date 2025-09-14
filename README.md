@@ -1,3 +1,35 @@
+#Quantum Knapsack Solver: A "From Scratch" VQE Implementation
+This repository contains a Python script that solves the classic Knapsack problem using a Variational Quantum Eigensolver (VQE) algorithm implemented from scratch with only the core Qiskit library. The goal of this project is to provide a clear, educational, and self-contained example of how a real-world optimization problem can be translated into a quantum-solvable format without relying on high-level application modules.
+
+#The chosen scenario is a strategic resource allocation problem for a non-profit organization aiming to maximize its social impact within a limited budget.
+
+#The Problem: Strategic Resource Allocation
+The Knapsack problem is a famous challenge in combinatorial optimization. In our scenario:
+
+The Knapsack: A non-profit's limited budget.
+
+The Items: A list of potential projects to fund.
+
+Item Weight: The cost of each project.
+
+Item Value: The social impact score of each project.
+
+Objective: Select the combination of projects that yields the maximum possible impact without exceeding the budget. As the number of projects grows, the number of possible combinations becomes too large for classical computers to check exhaustively.
+
+#The Quantum Approach: VQE from Scratch
+This project uses the Variational Quantum Eigensolver (VQE), a hybrid quantum-classical algorithm well-suited for near-term quantum devices. Instead of using pre-built libraries, this implementation demonstrates the fundamental steps from the ground up.
+
+#Key Features
+Core Qiskit Only: Uses only qiskit and qiskit-aer. It does not use qiskit-algorithms or qiskit-optimization, making it a pure, foundational example.
+
+Manual Hamiltonian Construction: The business problem (objective and constraints) is manually translated into a Quadratic Unconstrained Binary Optimization (QUBO) problem and then mapped to a quantum Ising Hamiltonian.
+
+Custom VQE Loop: The entire VQE optimization loop is implemented from scratch, including a custom gradient descent optimizer that uses the parameter-shift rule to calculate gradients.
+
+Self-Contained & Executable: The script is designed to be run in a single block in an interactive environment like a Jupyter Notebook or Google Colab, with no external files.
+
+Text-Based Reporting: The final result is presented in a clear, formatted text report without any plotting library dependencies.
+
 # --- Step 1: Install Core Qiskit Libraries ---
 # This command installs only the necessary core components.
 import sys
