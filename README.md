@@ -1,9 +1,9 @@
-#Quantum Knapsack Solver: A "From Scratch" VQE Implementation
+# ---Quantum Knapsack Solver: A "From Scratch" VQE Implementation---
 This repository contains a Python script that solves the classic Knapsack problem using a Variational Quantum Eigensolver (VQE) algorithm implemented from scratch with only the core Qiskit library. The goal of this project is to provide a clear, educational, and self-contained example of how a real-world optimization problem can be translated into a quantum-solvable format without relying on high-level application modules.
 
-#The chosen scenario is a strategic resource allocation problem for a non-profit organization aiming to maximize its social impact within a limited budget.
+#  --- The chosen scenario is a strategic resource allocation problem for a non-profit organization aiming to maximize its social impact within a limited budget.---
 
-#The Problem: Strategic Resource Allocation
+# ---The Problem: Strategic Resource Allocation ---
 The Knapsack problem is a famous challenge in combinatorial optimization. In our scenario:
 
 The Knapsack: A non-profit's limited budget.
@@ -16,7 +16,7 @@ Item Value: The social impact score of each project.
 
 Objective: Select the combination of projects that yields the maximum possible impact without exceeding the budget. As the number of projects grows, the number of possible combinations becomes too large for classical computers to check exhaustively.
 
-#The Quantum Approach: VQE from Scratch
+# ---The Quantum Approach: VQE from Scratch ---
 This project uses the Variational Quantum Eigensolver (VQE), a hybrid quantum-classical algorithm well-suited for near-term quantum devices. Instead of using pre-built libraries, this implementation demonstrates the fundamental steps from the ground up.
 
 #Key Features
